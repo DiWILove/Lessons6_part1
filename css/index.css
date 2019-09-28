@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    box-sizing: border-box;
+}
+.container{
+    width: 940px;
+    margin: 0 auto;
+}
+header{
+    margin: 70px 0;
+    text-align: center;
+}
+h1, h4, h3, header p{
+    text-transform: uppercase;
+}
+h4{
+    margin-bottom: 35px;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #898f99;
+}
+h1{
+    margin-bottom: 45px;
+    font-size: 48px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #0ec8cb;
+}
+header p{
+    line-height: 1.5;
+    font-size: 18px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    color: #999999;
+}
+main{
+    font-size: 0;
+}
+section{
+    display: inline-block;
+    vertical-align: top;
+    padding: 170px 30px 100px;
+    width: 25%;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+h3:before{
+    content:"";
+    position: absolute;
+    left: 55px;
+}
+.design:before, .development:before{
+    width: 65px;
+    height: 65px;
+    top: -110px;
+}
+.graphics:before, .illustr:before{
+    top: -100px;
+}
+.design:before{
+    background-image: url("../image/anchor.png");
+}
+.development:before{
+    background-image: url("../image/diamond.png");
+}
+.graphics:before{
+    height: 50px;
+    width: 65px;
+    background-image: url("../image/eyeglasses.png");
+}
+.illustr:before{
+    width: 64px;
+    height: 52px;
+    background-image: url("../image/monitor.png");
+}
+section:hover{
+    background-color: #0ec8cb;
+}
+section:hover .design:before{
+    background-image: url("../image/anchor-hover.png");
+}
+section:hover .development:before{
+    background-image: url("../image/diamond-hover.png");
+}
+section:hover .graphics:before{
+    background-image: url("../image/eyeglasses-hover.png");
+}
+section:hover .illustr:before{
+    background-image: url("../image/monitor-hover.png");
+}
+section:hover h3{
+    color: #fff;
+}
+section:hover p{
+    color: #fff;
+}
+h3{
+    position: relative;
+    margin-bottom: 37px;
+    font-size: 21px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #1b1b1b;
+}
+section p{
+    line-height: 1.5;
+    font-size: 14px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    color: #777777;
+}
+.web{
+    margin-top: -10px;
+}
